@@ -26,7 +26,7 @@ def chat_bot(user_message: str) -> str:
         # Initialize the Agent with the fast model
         agent = Agent(
             system_prompt=system_prompt,
-            model_name="llama3-8b-8192", 
+            model_name="llama-3.1-8b-instant", 
             temperature=0.7
         )
         

@@ -46,7 +46,7 @@ def lecturer_agent(topic: str, context: str):
     try:
         # Call Groq with streaming enabled
         completion = client.chat.completions.create(
-            model="llama3-70b-8192", # Using the larger model for better reasoning
+            model="llama-3.3-70b-versatile", # Using the larger model for better reasoning
             messages=[{"role": "user", "content": system_prompt}],
             stream=True,
             temperature=0.6,    # Slightly creative but focused

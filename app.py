@@ -17,8 +17,8 @@ if project_root not in sys.path:
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 app = Flask(__name__, 
-            template_folder='../frontend/templates', 
-            static_folder='../frontend/static')
+            template_folder='templates', 
+            static_folder='static')
 
 db = Database()
 
