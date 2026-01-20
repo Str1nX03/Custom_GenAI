@@ -1,4 +1,4 @@
-from backend.core.agent_engine import Agent
+from src.core.agent_engine import Agent
 import logging
 
 logger = logging.getLogger(__name__)
@@ -6,7 +6,7 @@ logger = logging.getLogger(__name__)
 def chat_bot(user_message: str) -> str:
     """
     Fast, sales-oriented chatbot for the landing page.
-    Uses Llama 3 8B for low latency.
+    Uses llama-3.1-8b-instant for low latency.
     """
     try:
         system_prompt = """

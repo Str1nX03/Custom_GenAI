@@ -5,10 +5,10 @@ from dotenv import load_dotenv
 load_dotenv()
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from flask import Flask, render_template, request, jsonify, Response, stream_with_context
-from backend.database import Database
-from backend.agents.chatbot import chat_bot
-from backend.agents.scraper import scraper_agent
-from backend.agents.lecturer import lecturer_agent
+from src.database import Database
+from src.agents.chatbot import chat_bot
+from src.agents.scraper import scraper_agent
+from src.agents.lecturer import lecturer_agent
 
 project_root = os.path.abspath(os.path.join(os.getcwd(), '..')) 
 if project_root not in sys.path:
