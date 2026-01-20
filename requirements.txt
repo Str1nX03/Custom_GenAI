@@ -1,0 +1,7 @@
+flask
+groq
+duckduckgo-search
+python-dotenv
+requests
+gunicorn
+supabase
