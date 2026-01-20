@@ -10,6 +10,10 @@ from backend.agents.chatbot import chat_bot
 from backend.agents.scraper import scraper_agent
 from backend.agents.lecturer import lecturer_agent
 
+project_root = os.path.abspath(os.path.join(os.getcwd(), '..')) 
+if project_root not in sys.path:
+    sys.path.append(project_root)
+
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 app = Flask(__name__, 
